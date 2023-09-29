@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
 
-  const rediredtTo3dView = () => {
+  const redirectTo3dView = () => {
     router.push("/3dview");
   };
 
@@ -15,7 +15,7 @@ export default function Home() {
       <p className="mb-5 text-xl">The best ad Website got even better!</p>
       <button
         className="btn btn-secondary w-1/3 h-10"
-        onClick={rediredtTo3dView}
+        onClick={redirectTo3dView}
       >
         Check it out!
       </button>
