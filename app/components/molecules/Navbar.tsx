@@ -9,6 +9,10 @@ export default function Navbar() {
     router.replace("/");
   };
 
+  const redirectToCompany = (): void => {
+    router.replace("/company");
+  };
+
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
@@ -19,7 +23,12 @@ export default function Navbar() {
           adPlace
         </a>
       </div>
-      <a className="btn text-xl btn-neutral normal-case">Company Area</a>
+      <a
+        className="btn text-xl btn-neutral normal-case"
+        onClick={redirectToCompany}
+      >
+        Company Area
+      </a>
     </div>
   );
 }

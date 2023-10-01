@@ -24,7 +24,6 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "@types/next": "^9.0.0",
     "@types/three": "^0.156.0",
     "daisyui": "^3.7.6",
     "postcss": "^8.4.30"
