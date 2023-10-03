@@ -20,25 +20,5 @@ export const options: NextAuthOptions = {
       clientId: process.env.GITHUB_CLIENT_ID!,
       clientSecret: process.env.GITHUB_CLIENT_SECRET!,
     }),
-    Credentials({
-      name: "Credentials",
-      credentials: {
-        username: { label: "Username", type: "text" },
-        password: { label: "Password", type: "password" },
-      },
-      async authorize(
-        credentials: Record<"username" | "password", string> | undefined
-      ) {
-        const user = { id: "1", name: "J Smith", password: "password" };
-        if (
-          user.password === credentials?.password &&
-          user.name === credentials?.username
-        ) {
-          return user;
-        } else {
-          return null;
-        }
-      },
-    }),
   ],
 };

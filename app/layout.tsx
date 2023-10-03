@@ -1,4 +1,4 @@
-import Navbar from "./components/molecules/Navbar";
+import Navbar from "./components/molecules/navbar";
 import Footer from "./components/molecules/footer";
 
 import "./styles/globals.css";
