@@ -1,11 +1,11 @@
-"use client";
-
 import { Session, getServerSession } from "next-auth";
-import { signOut } from "next-auth/react";
 import Link from "next/link";
+import SignOutButton from "../atoms/SignOutButton";
 
 export default async function Navbar() {
   const session: Session | null = await getServerSession();
+
+
 
   return (
     <div className="navbar bg-base-100">
@@ -36,8 +36,8 @@ export default async function Navbar() {
               <li>
                 <Link href={"/profile"}>Profile</Link>
               </li>
-              <li onClick={() => signOut({ redirect: true, callbackUrl: "/" })}>
-                <a>Logout</a>
+              <li>
+                <SignOutButton></SignOutButton >
               </li>
             </ul>
           </div>

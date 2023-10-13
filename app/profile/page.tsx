@@ -1,7 +1,7 @@
 "use client";
 
 import { useSession } from "next-auth/react";
-import Drawer from "../components/atoms/drawer";
+import Drawer from "../components/atoms/Drawer";
 
 export default function Home() {
   const { data: session } = useSession();
