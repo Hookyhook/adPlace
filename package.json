@@ -24,7 +24,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "@types/three": "^0.156.0",
+    "@types/three": "^0.157.0",
     "daisyui": "^3.7.6",
     "postcss": "^8.4.31"
   }
