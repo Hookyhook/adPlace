@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@types/three": "^0.157.0",
-    "daisyui": "^3.9.2",
+    "daisyui": "^4.4.2",
     "postcss": "^8.4.31"
   }
 }
